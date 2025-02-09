@@ -26,11 +26,8 @@ Type Alignment and Memory Layout in Golang but simple :D
 - For example:
 
 type S struct {
-
     x int8   // 1-byte
-
     y int64  // 8-byte
-    
 }
 
 * x as a standalone variable has an alignment of 1.
