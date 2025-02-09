@@ -4,3 +4,7 @@
     min = "0.134.0"
 [params]
   theme = "light-pink"
+[params.read_more]
+text = { more = "Read More", less = "Read Less" }
+length_limit = 24
+posts_per_page = 2
