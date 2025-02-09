@@ -2,12 +2,12 @@
 title: "✧ Memory Layouts in Golang"
 date: "2025-02-08T21:05:11-03:00"
 tags: ["golang","flashcard",]
-ending_images: [ "/mem.jpg"]
+title_images: [ "/mem.png"]
 author: "fatima"
 draft: false
 ---
 <!-- introduction -->
-Type Alignment and Memory Layout in Golang but simple :D
+Type Alignment and Memory Layout in Golang but simply :D
 <!--more-->
 <!-- rest of the content -->
 ### WHAT is Type alignment

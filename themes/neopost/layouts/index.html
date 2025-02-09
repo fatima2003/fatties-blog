@@ -56,7 +56,7 @@
         </article>
     {{ $limit := .Site.Params.read_more.length_limit }}
     {{ $pages := where .Site.RegularPages "Section" "posts" }}
-    {{ range (.Paginate $pages (or .Site.Params.posts_per_page 5)).Pages }}
+    {{ range (.Paginate $pages (or .Site.Params.posts_per_page 1)).Pages }}
         <article>
             <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
             {{ $tags := .Params.tags }}
@@ -93,26 +93,21 @@
     {{ end }}
     {{ template "_internal/pagination.html" . }}
     <script>
-        function toggleReadMore() {
-            var fullContent = document.getElementById("full-content");
-            var btnText = document.getElementById("read-more-btn");
-            var textContent = document.getElementById("text-content");
-    
-            // Ensure that the templated values are inserted correctly
-            var readMoreText = "{{ .Site.Params.read_more.text.more }}";
-            var readLessText = "{{ .Site.Params.read_more.text.less }}";
-    
-            if (fullContent.style.display === "none") {
-                textContent.style.display = "none";
-                fullContent.style.display = "inline";
-                btnText.innerHTML = readLessText; 
-            } else {  
-                textContent.style.display = "inline";
-                fullContent.style.display = "none";
-                btnText.innerHTML = readMoreText;
-            }
+    function toggleReadMore() {
+        var fullContent = document.getElementById("full-content");
+        var btnText = document.getElementById("read-more-btn");
+        var textContent = document.getElementById("text-content");
+
+        if (fullContent.style.display === "none") {
+            textContent.style.display = "none";
+            fullContent.style.display = "inline";
+            btnText.innerHTML = {{ .Site.Params.read_more.text.less }};
+        } else {
+            textContent.style.display = "inline";
+            fullContent.style.display = "none";
+            btnText.innerHTML = {{ .Site.Params.read_more.text.more }};
         }
+    }
     </script>
-    
     </main>
 {{ end }}
