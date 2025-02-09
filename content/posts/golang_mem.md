@@ -2,7 +2,7 @@
 title: "✧ Memory Layouts in Golang"
 date: "2025-02-08T21:05:11-03:00"
 tags: ["golang","flashcard",]
-title_images: [ "/mem.jpg"]
+ending_images: [ "/mem.jpg"]
 author: "fatima"
 draft: false
 ---
