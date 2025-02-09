@@ -15,4 +15,5 @@ list:
     - "trying new food spots   (๑ᵔ⤙ᵔ๑)  "      
     - "skincare & glitters 𓏲 ๋࣭  ࣪ ˖"    
     - "pink ⟡ ₊ 🎀 🦢₊ ⟡"
+    - "my friends ⋆⭒˚𖠋𖠋𖠋𖠋*.⋆"
 ---
