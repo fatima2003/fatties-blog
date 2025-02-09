@@ -1,0 +1,10 @@
+# Ignore Hugo-generated files
+public/
+resources/
+.cache/
+hugo_stats.json
+node_modules/
+
+# Ignore theme submodules 
+themes/*/
+!themes/neopost
