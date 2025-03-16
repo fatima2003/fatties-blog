@@ -2,7 +2,7 @@
 title: "✧ Foods I would like to try again for the first time ૮₍ ˃ ⤙ ˂ ₎ა"
 date: "2025-02-15T21:05:11-03:00"
 tags: ["food",]
-title_images: [ "/sushi.png", "ramen.jpeg", "/tasha.png",]
+title_images: [ "/sushi.png", "ramen.jpeg"]
 ending_images: [ "/tasha.png",]
 author: "fatima"
 draft: false
