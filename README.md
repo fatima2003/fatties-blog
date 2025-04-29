@@ -4,4 +4,4 @@ Created using Hugo and used the theme [neopost](https://github.com/salatine/neop
 
 Deployed using vercel. Had this huge layout not found bug, which was fixed by adding a `vercel.json` file with the `vercel` and `go` version as suggested by: https://dev.to/xifm0/step-by-step-guide-to-deploy-hugo-on-vercel-57jb#anchor1
 
-![Screenshot of site](https://github.com/fatima2003/fatties-blog/blob/main/ss.png)
+![Uploading image.png…]()
