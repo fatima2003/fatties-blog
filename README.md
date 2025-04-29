@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/60f8fbcf-2559-41da-a8e8-1235e704316b)![image](https://github.com/user-attachments/assets/7863e376-4a83-4d3b-af0a-b156b6369435)# My blog
+# My blog
 
 Created using Hugo and used the theme [neopost](https://github.com/salatine/neopost) by @salatine! I modified a few things in the theme to suit my aes more :D
 
