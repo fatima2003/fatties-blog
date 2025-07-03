@@ -20,4 +20,4 @@ params:
       more: "read more"
       less: "read less"
 
-  posts_per_page: 3 # defaults to 5 if not defined
+  posts_per_page: 5 # defaults to 5 if not defined
