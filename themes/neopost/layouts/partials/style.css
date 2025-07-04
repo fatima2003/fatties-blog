@@ -389,4 +389,9 @@ header h1 a:hover {
         margin: .3em 1em;
     }
 }
+
+.readmore .admonition {        /* cant see admonition in preview of blog */
+    display: none !important;
+}
+
 </style>

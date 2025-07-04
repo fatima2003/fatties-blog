@@ -59,16 +59,22 @@ prog, _    := env.Compile(certTemplateProgram)
 val, _, _  := prog.Eval(map[string]any{"request": req})
 ```
 
-::: info 
-Your CEL program is the set of rules you define for each field in the proto. For example:
-```golang
-certTemplateProgram := `
-ValidationOutput{
-    common_name: request.common_name,
-    is_valid: size(request.ip_sans) > 0
-}`
-```
-:::
+<!-- more -->
+
+> [!INFO]
+>
+> Your CEL program is the set of rules you 
+> define for each field in the proto.
+> For example:
+>
+> ```golang
+> CertTemplateProgram :=
+> `CertTemplate{
+>   common_name: request.common_name,
+>   is_valid:    size(request.ip_sans) > 0
+> }`
+> ```
+
 
 ### Overall thoughts on CEL
 

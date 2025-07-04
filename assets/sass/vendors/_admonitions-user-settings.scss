@@ -1,0 +1,11 @@
+/*  assets/sass/vendors/_admonitions-user-settings.scss  */
+
+/* --- Admonition Type Base Colours --- */
+/* swap INFO’s default blue for pink                                  */
+$admonition-colors-overrides: (
+  info: #ff80ab          // 🍥 pick any pink you like
+);
+
+/* Optional: tweak header-text/icon colour for readability            */
+$admonition-light-header-text-overrides: (info: #e65891);   // darker in light mode
+$admonition-dark-header-text-overrides:  (info: #ff9cc2);   // lighter in dark mode

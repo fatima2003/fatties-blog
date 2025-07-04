@@ -2,3 +2,29 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Fatima`s Blog'
 theme = 'neopost'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      admonition = true
+
+[params]
+  theme        = "light-pink"
+  favicon      = "/favicon.ico"
+
+  # any number of extra CSS files can go here
+  customCss    = ["css/custom.css"]
+
+  [params.read_more]
+    length_limit = 120
+    [params.read_more.text]
+      more = "read more"
+      less = "read less"
+
+  posts_per_page = 1
+
+[module]
+  [[module.imports]]
+    path = "github.com/KKKZOZ/hugo-admonitions"
