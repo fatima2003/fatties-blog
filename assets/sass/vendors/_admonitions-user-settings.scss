@@ -3,7 +3,8 @@
 /* --- Admonition Type Base Colours --- */
 /* swap INFO’s default blue for pink                                  */
 $admonition-colors-overrides: (
-  info: #ff80ab          // 🍥 pick any pink you like
+  info: #ff80ab,          // 🍥
+  idea: #70a9ff
 );
 
 /* Optional: tweak header-text/icon colour for readability            */

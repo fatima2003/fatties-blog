@@ -7,14 +7,19 @@ draft: false
 ---
 
 When I initially created this blog title, I was trying to return a single object from 
-my CEL Program compiled with just 1 line of code (not really one line though lol).
+my CEL Program compiled with just 1 line of code.
 I tediously (and naively) iterated through my struct, compiling each item 
-and appending to another struct.
+and then appending to another struct.
 
 Geff, who was also working on a CEL PR, pointed me in the direction of protos in CEL.
 I hadn't worked with protos before and so didn't know how they worked and wasn't confident
 it would work out..? 
-💭 _It would be pretty funky if i could compile the whole template in a line of code_ Turns out CEL is pretty funky ;)
+
+> [!IDEA] ( ╹ -╹)?
+>
+> _It would be pretty funky if i could compile the whole template in a line of code_
+> 
+> Turns out CEL is pretty funky ;)
 
 ### A 30-Second Proto Crash-Course  
 
@@ -61,7 +66,7 @@ val, _, _  := prog.Eval(map[string]any{"request": req})
 
 <!-- more -->
 
-> [!INFO]
+> [!INFO] CEL program
 >
 > Your CEL program is the set of rules you 
 > define for each field in the proto.
@@ -72,6 +77,7 @@ val, _, _  := prog.Eval(map[string]any{"request": req})
 > `CertTemplate{
 >   common_name: request.common_name,
 >   is_valid:    size(request.ip_sans) > 0
+>   ...
 > }`
 > ```
 
@@ -80,8 +86,8 @@ val, _, _  := prog.Eval(map[string]any{"request": req})
 
 CEL is a super chill non-turing complete language. The syntax is pretty straightforward and there's not 
 a lot of _magic_ 🪄 behind the scenes. Creating CEL programs is reminiscent of Logic and Proof. Golang 
-has awesome CEL support and CEL itself was written in Golang.
+has awesome CEL support and CEL itself was written in Golang. 
 
-Checkout how I used CEL for dynamic certificate issuance policies in OpenBao's PKI engine: [OpenBao PR #794](https://github.com/openbao/openbao/pull/794) 💛
+Checkout how I used CEL for dynamic certificate issuance policies in OpenBao's PKI engine: [OpenBao PR #794](https://github.com/openbao/openbao/pull/794) 💛 
 
-If you’re hacking on CEL in OpenBao or anywhere, feel free to ping me [@fatima2003](https://github.com/fatima2003) :D
+If you’re hacking on CEL in OpenBao or anywhere, feel free to ping me [@fatima2003](https://github.com/fatima2003) :D 
