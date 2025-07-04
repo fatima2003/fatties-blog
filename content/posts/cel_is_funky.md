@@ -38,8 +38,37 @@ The final CertTemplate had about 37 fields so you can just imagine how horrible 
 through and processing each field individually.
 
 
-Compiling this proto object would require registering it into the CEL environment (so CEL knows how it's 
-defined) and simply compiling your request of type `CertTemplate`. ✨
+Compiling this proto object would require only 2 steps: 
+* Register it into the CEL environment (so CEL knows how it's defined) 📠
+
+```golang
+env, _ := cel.NewEnv(
+    // register the proto
+    cel.Types(&pb.CertTemplate{}),
+    // register your incoming request
+    cel.Declarations(
+        decls.NewVar("request", decls.NewObjectType("mypkg.CertTemplate")),
+    ),
+)
+```
+
+* Compile & run your expression ✨
+
+```golang
+prog, _    := env.Compile(certTemplateProgram)
+val, _, _  := prog.Eval(map[string]any{"request": req})
+```
+
+::: info 
+Your CEL program is the set of rules you define for each field in the proto. For example:
+```golang
+certTemplateProgram := `
+ValidationOutput{
+    common_name: request.common_name,
+    is_valid: size(request.ip_sans) > 0
+}`
+```
+:::
 
 ### Overall thoughts on CEL
 
@@ -48,5 +77,5 @@ a lot of _magic_ 🪄 behind the scenes. Creating CEL programs is reminiscent of
 has awesome CEL support and CEL itself was written in Golang.
 
 
-If you’re hacking on CEL in OpenBao or anywhere, feel free to ping me on GitHub @[@fatima2003](https://github.com/fatima2003) :D
+If you’re hacking on CEL in OpenBao or anywhere, feel free to ping me [@fatima2003](https://github.com/fatima2003) :D
 
