@@ -13,9 +13,9 @@ theme = 'neopost'
 [params]
   theme        = "light-pink"
   favicon      = "/favicon.ico"
-
-  # any number of extra CSS files can go here
-  customCss    = ["css/custom.css"]
+  customCss = [
+    "css/custom.css",
+  ]
 
   [params.read_more]
     length_limit = 120
@@ -28,3 +28,8 @@ theme = 'neopost'
 [module]
   [[module.imports]]
     path = "github.com/KKKZOZ/hugo-admonitions"
+
+[markup.highlight]
+  noClasses = true
+  style     = "monokailight"
+  

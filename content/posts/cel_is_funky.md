@@ -30,7 +30,7 @@ syntax = "proto3";
 message CertTemplate {
   string common_name = 1;
   bool   is_valid    = 2;
-  … imagine 35 more fields here 😱
+  ... imagine 35 more fields here (o_O)
 }
 ```
 
@@ -82,6 +82,6 @@ CEL is a super chill non-turing complete language. The syntax is pretty straight
 a lot of _magic_ 🪄 behind the scenes. Creating CEL programs is reminiscent of Logic and Proof. Golang 
 has awesome CEL support and CEL itself was written in Golang.
 
+Checkout how I used CEL for dynamic certificate issuance policies in OpenBao's PKI engine: [OpenBao PR #794](https://github.com/openbao/openbao/pull/794) 💛
 
 If you’re hacking on CEL in OpenBao or anywhere, feel free to ping me [@fatima2003](https://github.com/fatima2003) :D
-

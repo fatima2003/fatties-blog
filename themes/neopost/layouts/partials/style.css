@@ -394,4 +394,14 @@ header h1 a:hover {
     display: none !important;
 }
 
+pre, .chroma {                  /* .chroma target works when noClasses = false */
+    background:#fff7f9;           /* light cream-pink */
+    border:1px solid #f6d3e5;
+    border-radius:6px;
+
+    padding:0.75rem 1rem;            /* top/bottom 0.75 rem, sides 1 rem */
+    margin:1.2rem 0;                 /* space around the whole block     */
+    overflow-x:auto;  
+}
+
 </style>
