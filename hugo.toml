@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://fatties-blog.vercel.app'
 languageCode = 'en-us'
 title = 'Fatima`s Blog'
 theme = 'neopost'

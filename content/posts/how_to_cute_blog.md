@@ -15,3 +15,4 @@ These are the stuff I referenced/used to create this blog.
 - To make images transparent: https://www.remove.bg/upload
 - For cute emoticon symobols: https://emojicombos.com/coquette
 - For background: https://www.pinterest.com/
+- Admonition styling: https://github.com/KKKZOZ/hugo-admonitions 🍥
