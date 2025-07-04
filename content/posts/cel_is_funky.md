@@ -1,6 +1,6 @@
 ---
 title: "CEL is Funky"
-date: "2025-02-09T21:05:11-03:00"
+date: "2025-04-09T21:05:11-03:00"
 tags: ["CEL","PKI","OpenBao",]
 author: "fatima"
 draft: false
