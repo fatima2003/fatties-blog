@@ -1,7 +1,7 @@
 
 ---
 title: "Can Golang read the room?"
-date: "2025-04-09T21:05:11-03:00"
+date: "2025-07-09T8:05:11-03:00"
 tags: ["Golang","flashcard",]
 author: "fatima"
 draft: false
