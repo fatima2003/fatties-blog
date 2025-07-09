@@ -7,12 +7,13 @@ author: "fatima"
 draft: false
 ---
 
-Sometimes you want a function to be able to read the room, to get `context` about what is going on. For instance, if a certain function exits, you want all sub-processes to complete as well. Well, golang can't read body language but it does have a `context` package.
+Sometimes you want a function to be able to read the room, to get {{< highlight go "hl_inline=true" >}}context{{< /highlight >}} about what is going on. For instance, if a certain function exits, you want all sub-processes to complete as well. Well, golang can't read body language but it does have a {{< highlight go "hl_inline=true" >}}context{{< /highlight >}} package.
 This package lets your code carry cancellation signals, deadlines, and request-scoped values across API boundaries and down into goroutines.
 
 ## Key aspects of Go's context:
 ### Cancellation Signals:
-A `context.Context`` can carry a cancellation signal. When a context is canceled, all goroutines that are listening on its `Done()`` channel will be notified, allowing them to gracefully stop their operations. This is crucial for resource management and preventing goroutine leaks.
+A {{< highlight go "hl_inline=true" >}}context.Context{{< /highlight >}}
+can carry a cancellation signal. When a context is canceled, all goroutines that are listening on its {{< highlight go "hl_inline=true" >}}Done(){{< /highlight >}} channel will be notified, allowing them to gracefully stop their operations. This is crucial for resource management and preventing goroutine leaks.
 
 ### Deadlines and Timeouts:
 Contexts can be associated with a deadline (a specific time) or a timeout (a duration). If the deadline is reached or the timeout expires, the context is automatically canceled, signaling to dependent goroutines to cease their work.
