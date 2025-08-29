@@ -6,4 +6,4 @@ author: "fatima"
 draft: true
 ---
 
-b+ tree read requests
+b+ tree read requests used by raft for super fast reads
