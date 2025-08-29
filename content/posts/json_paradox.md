@@ -2,7 +2,7 @@
 title: "JSON Paradox"
 date: "2025-04-29T11:40:02Z"
 tags: ["json", "fun-fact"]
-title_images: [ "/spider-man-triple-meme.png"]
+title_images: [ "/spider-man-triple-meme.png", "/spidey.jpg"]
 author: "fatima"
 draft: false
 ---
