@@ -1,6 +1,6 @@
 ---
 title: "Implementing System Design IRL"
-date: "2025-02-09T21:05:11-03:00"
+date: "2025-04-29T21:05:11-03:00"
 tags: ["system-design",]
 title_images: [ "/astro_boy.png"]
 author: "fatima"
